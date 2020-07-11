@@ -1,0 +1,378 @@
+{
+    "All ATMs Trained with Train Test Split": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.45697266653028884,
+            "Testing Score": 0.4469533394817221,
+            "RMSE": 243308.4815900565
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.4013361571445507,
+            "Testing Score": 0.409464110262857,
+            "RMSE": 251419.81922358868
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.4013043683235682,
+            "Testing Score": 0.4096207330748531,
+            "RMSE": 251386.47604234665
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.1599098376804099,
+            "Testing Score": 0.16009954359397116,
+            "RMSE": 299840.48379522713
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.4013359783757806,
+            "Testing Score": 0.40948266387110405,
+            "RMSE": 251415.86960634057
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.4006642870319033,
+            "Testing Score": 0.40957478518163776,
+            "RMSE": 251396.25827460986
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.023764153336445215,
+            "Testing Score": -0.01767786439476282,
+            "RMSE": 330051.3590919249
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9389306830314473,
+            "Testing Score": 0.6012197520412734,
+            "RMSE": 206606.11951902052
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": 0.3739734197065788,
+            "RMSE": 258864.64985155227
+        }
+    },
+    "All ATMs Trained with 2017 Test Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.49334898232826474,
+            "Testing Score": -0.2036759694108361,
+            "RMSE": 370654.38876929344
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.4535210215154458,
+            "Testing Score": -0.08086088361456811,
+            "RMSE": 351236.1852653552
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.4534927053204132,
+            "Testing Score": -0.07897957400080258,
+            "RMSE": 350930.3772714196
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.18540431599596496,
+            "Testing Score": -0.03468585104161148,
+            "RMSE": 343651.78719365434
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.4535207164047764,
+            "Testing Score": -0.08068222421466187,
+            "RMSE": 351207.1555167714
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.4530724819355578,
+            "Testing Score": -0.07320140697245625,
+            "RMSE": 349989.46216254827
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.025059950311879797,
+            "Testing Score": -0.00997024184255646,
+            "RMSE": 339522.5629301751
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9443151597170375,
+            "Testing Score": -0.40636049422891585,
+            "RMSE": 400647.72479138186
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -0.509582616818163,
+            "RMSE": 415090.50076680846
+        }
+    },
+    "All ATMs Trained with 2017 Test Data (No Outlier Months)": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.49334898232826474,
+            "Testing Score": -0.2018997476884299,
+            "RMSE": 372340.49206527043
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.4535210215154458,
+            "Testing Score": -0.07238503792997997,
+            "RMSE": 351707.4107674948
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.4534927053204132,
+            "Testing Score": -0.07071918178027703,
+            "RMSE": 351434.1312815757
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.18540431599596496,
+            "Testing Score": -0.03575269583521212,
+            "RMSE": 345648.1068296639
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.4535207164047764,
+            "Testing Score": -0.07222881524409619,
+            "RMSE": 351681.79185469187
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.4530724819355578,
+            "Testing Score": -0.06550274948102763,
+            "RMSE": 350577.01082009525
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.025059950311879797,
+            "Testing Score": -0.010947000905629833,
+            "RMSE": 341483.98469625093
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9441106189079738,
+            "Testing Score": -0.3925221680637721,
+            "RMSE": 400781.0743700633
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -0.516554559966816,
+            "RMSE": 418249.2452803565
+        }
+    },
+    "Big Street ATM trained with 2017 Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.28999562819250424,
+            "Testing Score": -0.36556725432459025,
+            "RMSE": 181461.59767223545
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.5444464813526175,
+            "Testing Score": -2.1708266083172028,
+            "RMSE": 276512.2844681913
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.5442115519020725,
+            "Testing Score": -2.104107536431348,
+            "RMSE": 273587.69620255945
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.13017936078590775,
+            "Testing Score": -0.07144551642773656,
+            "RMSE": 160736.02690753856
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.5444461398934355,
+            "Testing Score": -2.169837008089656,
+            "RMSE": 276469.1320024553
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.5436357614309526,
+            "Testing Score": -2.038951303826138,
+            "RMSE": 270701.1207086409
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.0014462945200466315,
+            "Testing Score": -0.04178777477528839,
+            "RMSE": 158495.8194715498
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9293449865946493,
+            "Testing Score": -2.1196818890616456,
+            "RMSE": 274273.17824777367
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -2.163602330835488,
+            "RMSE": 276197.1078868555
+        }
+    },
+    "Mount Road ATM trained with 2017 Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.3529602657639054,
+            "Testing Score": -2.4281120216633076,
+            "RMSE": 343922.66193841596
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.5181025322944846,
+            "Testing Score": -2.0081267367669327,
+            "RMSE": 322167.22468273697
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.5169168741625048,
+            "Testing Score": -2.0275616405234143,
+            "RMSE": 323206.278030127
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.15649508138830026,
+            "Testing Score": -2.0667791651930627,
+            "RMSE": 325292.86913239764
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.5181017969667947,
+            "Testing Score": -2.0088051198912362,
+            "RMSE": 322203.5496961272
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.5135989086530637,
+            "Testing Score": -2.0427218501556643,
+            "RMSE": 324014.4789707869
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.00016256288294114185,
+            "Testing Score": -2.0085538639651888,
+            "RMSE": 322190.0963087881
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.92114860858848,
+            "Testing Score": -2.166595393698463,
+            "RMSE": 330544.2287369519
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -2.7233351562821104,
+            "RMSE": 358425.8769628607
+        }
+    },
+    "Airport ATM trained with 2017 Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.21011877894017894,
+            "Testing Score": -0.320081646974691,
+            "RMSE": 280998.75391993637
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.32222981007075846,
+            "Testing Score": -0.2225528522966016,
+            "RMSE": 270419.38396096433
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.3217569895030462,
+            "Testing Score": -0.22184176086544904,
+            "RMSE": 270340.7285163081
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.09953188228525989,
+            "Testing Score": -0.26258298215092557,
+            "RMSE": 274810.90552300756
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.3222292592137085,
+            "Testing Score": -0.22262542436323265,
+            "RMSE": 270427.41003619053
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.3157519731139333,
+            "Testing Score": -0.2241650040142349,
+            "RMSE": 270597.6230639246
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.00025917436172195885,
+            "Testing Score": -0.2837013158547954,
+            "RMSE": 277099.6585735705
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.8900447730755308,
+            "Testing Score": -0.27929348024637335,
+            "RMSE": 276623.51197413163
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -0.3338543477481968,
+            "RMSE": 282460.81107805343
+        }
+    },
+    "KK Nagar ATM trained with 2017 Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.4036695621588333,
+            "Testing Score": -0.8766772926341135,
+            "RMSE": 509357.0695052921
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.5157346139328643,
+            "Testing Score": -0.5143170094807608,
+            "RMSE": 457547.2389128469
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.5146716060699499,
+            "Testing Score": -0.4816382614965147,
+            "RMSE": 452583.4106613807
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.18357797183729763,
+            "Testing Score": -0.8512793392665452,
+            "RMSE": 505898.64455021545
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.5157343902470022,
+            "Testing Score": -0.5137357898638595,
+            "RMSE": 457459.42343176226
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.5109456907699065,
+            "Testing Score": -0.46117843124706037,
+            "RMSE": 449447.70286618423
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.010162086368770362,
+            "Testing Score": -0.641280726160238,
+            "RMSE": 476342.10707451584
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9290283152322312,
+            "Testing Score": -0.4483332148724828,
+            "RMSE": 447467.79503584607
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -0.6926306356122631,
+            "RMSE": 483736.2540349255
+        }
+    },
+    "Christ College ATM trained with 2017 Data": {
+        "K-Nearest Neighbours": {
+            "Training Score": 0.2887955781878394,
+            "Testing Score": -0.48406666444966473,
+            "RMSE": 454068.21878890437
+        },
+        "Vanilla Linear Regression": {
+            "Training Score": 0.4884805976915243,
+            "Testing Score": -1.2845360365183236,
+            "RMSE": 563369.5987146889
+        },
+        "Ridge Linear Regression": {
+            "Training Score": 0.487886260442293,
+            "Testing Score": -1.254349113835958,
+            "RMSE": 559635.1538683609
+        },
+        "Elasticnet Linear Regression": {
+            "Training Score": 0.15157031881129213,
+            "Testing Score": -0.37593065437858364,
+            "RMSE": 437212.60466702207
+        },
+        "Lasso Linear Regression": {
+            "Training Score": 0.4884802021606778,
+            "Testing Score": -1.2842461684834077,
+            "RMSE": 563333.8566610938
+        },
+        "Bayesian Ridge Linear Regression": {
+            "Training Score": 0.48620201491936166,
+            "Testing Score": -1.2109567113667454,
+            "RMSE": 554222.9690183143
+        },
+        "Support Vector Regression": {
+            "Training Score": -0.01517727140145797,
+            "Testing Score": -0.552553057061139,
+            "RMSE": 464427.1776615809
+        },
+        "Random Forest Regression": {
+            "Training Score": 0.9142838939241426,
+            "Testing Score": -1.3467224913815858,
+            "RMSE": 570985.7485264153
+        },
+        "Decision Tree Regression": {
+            "Training Score": 1.0,
+            "Testing Score": -1.4072129200603452,
+            "RMSE": 578297.9511390877
+        }
+    }
+}
