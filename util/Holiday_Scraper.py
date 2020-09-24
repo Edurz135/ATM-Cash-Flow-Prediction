@@ -37,23 +37,14 @@ weekday_hindi_to_english = {
 	'गुरुवार': 'THURSDAY'
 }
 
-
-# Fetching only,
-# Federal/National Holidays = 1
-# Common Local Holidays = 4194304 (Bakri Eid, Ramzan Eid)
-# Important Observances = 16 (Ambedkar, Guru Gobind)
-# Major Christian = 4096 (Not that useful)
-# Major Muslim = 65536 (just the two Eids)
-# Major Hinduism = 1048576 (just Ram Navami)
-# Optional Holiday = 134217728 (bunch of useful holidays that we can filter through)
-
+"""
+	Scrapes holidays from 2011 to 2017 and saves it in the csv file "holidays_in_india_2011_2017" in data folder
+	Has multiple entries for some specific dates which has to be manually removed if scraping is done again
+"""
 def holiday_scraper():
 	url_template = "https://www.timeanddate.com/holidays/india/"
 
 	# One list for each column in the required table so that we can easily convert it to a dataframe
-	# years = []
-	# months = []
-	# days = []
 	weekdays = []
 	names = []
 	types = []
@@ -86,9 +77,6 @@ def holiday_scraper():
 			date = str(year) + "-" + str(holiday_month) + "-" + str(holiday_day)
 
 			dates.append(date)
-			# years.append(year)
-			# months.append(holiday_month)
-			# days.append(holiday_day)
 			weekdays.append(holiday_weekday)
 			names.append(holiday_title)
 			types.append(holiday_type)
@@ -97,7 +85,6 @@ def holiday_scraper():
 	print(len(names))
 
 	dates = pd.to_datetime(dates)
-	# holiay_df = pd.DataFrame({'Name': names, 'Day': days, 'Month': months, 'Year': years, 'Weekday': weekdays, 'Type': types})
 	holiay_df = pd.DataFrame({'Date': dates, 'Name': names, 'Weekday': weekdays, 'Type': types})
 
 	print(holiay_df.head())
@@ -105,22 +92,85 @@ def holiday_scraper():
 	holiay_df.to_csv('../data/holidays_in_india_2011_2017.csv', index=False)
 
 
+"""
+	This function maps each unique Holiday Name to their respective unique Holiday Type so as to avoid Holidays with multiple Types
+"""
 def get_unique_holidays():
 	holiday_df = pd.read_csv('../data/holidays_in_india_2011_2017.csv')
 
-	unique_holiday_names = holiday_df['Name'].unique()
-	unique_holiday_names_types = []
-	# print(unique_holiday_names)
+	unique_holiday_names_dict = dict()
+	unique_holiday_names = set(holiday_df['Name'])	
 
 	for name in unique_holiday_names:
-		# print("{} : {}".format(name, holiday_df[holiday_df['Name'] == name].iloc[0]['Type']))
-		# print(holiday_df[holiday_df['Name'] == name].iloc[0]['Type'])
-		unique_holiday_names_types.append(holiday_df[holiday_df['Name'] == name].iloc[0]['Type'])
+		unique_holiday_names_dict[name] = holiday_df[holiday_df['Name'] == name].iloc[0]['Type']
 
-	unique_holiday_df = pd.DataFrame({'Name': unique_holiday_names, 'Type': unique_holiday_names_types})
+	return unique_holiday_names_dict
 
-	print(unique_holiday_df.head())
 
-	unique_holiday_df.to_csv('../data/unique_holidays_and_types.csv', index=False)
+"""
+	Used for filtering holidays, the holidays which must be retained are to be specified in the set given below
+	Also does case by case fixing of data
+"""
+def filter_holidays():
+	original_holidays_set = {'Ambedkar Jayanti', 'Pongal', 'Holi', 'Independence Day', 
+	'Beti Bachao, Beti Padhao Campaign Launch Day', 'Raksha Bandhan (Rakhi)', 'First day of Passover', 
+	'Maharishi Dayanand Saraswati Jayanti', 'Vasant Panchami', 'Bakr Id/Eid ul-Adha', 
+	'Guru Nanak Jayanti', 'Maha Shivaratri/Shivaratri', 'Shivaji Jayanti', 'Holika Dahana', 
+	"Guru Tegh Bahadur's Martyrdom Day", 'Christmas', 'Maundy Thursday', 'December Solstice', 
+	"Father's Day", 'Halloween', "Valentine's Day", 'Janmashtami', 'Makar Sankranti', 
+	'Maha Navami', 'Chinese New Year', 'Ganesh Chaturthi/Vinayaka Chaturthi', 'Maha Saptami', 
+	'Chhat Puja (Pratihar Sashthi/Surya Sashthi)', 'May Day', 'Guru Purnima', 'Mahatma Gandhi Jayanti', 
+	'Republic Day', 'Dussehra', 'Vaisakhi', "New Year's Eve", "New Year's Day", 'Rath Yatra', 
+	'Govardhan Puja', 'Muharram/Ashura', 'Guru Govind Singh Jayanti', 'Guru Ravidas Jayanti', 
+	'Buddha Purnima/Vesak', 'June Solstice', 'Rama Navami', 'Onam', 'Friendship Day', 
+	'Diwali/Deepavali', 'Jamat Ul-Vida', 'Birthday of Ravindranath', 'First Day of Hanukkah', 
+	'Naraka Chaturdasi', 'Christmas Eve', 'Karaka Chaturthi (Karva Chauth)', "Mother's Day", 
+	'March Equinox', "Hazarat Ali's Birthday", 'Parsi New Year', 'Ramzan Id/Eid-ul-Fitar', 
+	'Maha Ashtami', 'Mesadi/Vaisakhadi', 'September Equinox', 'Easter Day', 'Bhai Duj', 
+	'Last day of Hanukkah', 'Chaitra Sukhladi', 'Good Friday', 'Mahavir Jayanti', 
+	'Maharishi Valmiki Jayanti', 'Milad un-Nabi/Id-e-Milad'}
 
-get_unique_holidays()
+
+	required_holidays_set = {'Ambedkar Jayanti', 'Pongal', 'Holi', 'Independence Day', 'Raksha Bandhan (Rakhi)', 
+	'Bakr Id/Eid ul-Adha', 'Guru Nanak Jayanti', 'Maha Shivaratri/Shivaratri', 
+	'Shivaji Jayanti', 'Holika Dahana', 'Christmas', "Father's Day", 'Halloween', "Valentine's Day", 'Janmashtami', 
+	'Makar Sankranti', 'Maha Navami', 'Ganesh Chaturthi/Vinayaka Chaturthi', 
+	'May Day', 'Guru Purnima', 'Mahatma Gandhi Jayanti', 'Republic Day', 'Dussehra', 
+	"New Year's Eve", "New Year's Day", 'Muharram/Ashura', 'Guru Govind Singh Jayanti', 
+	'Buddha Purnima/Vesak', 'Rama Navami', 'Onam', 'Friendship Day', 'Diwali/Deepavali', 
+	'Jamat Ul-Vida', 'Christmas Eve', "Mother's Day", 'Parsi New Year', 
+	'Ramzan Id/Eid-ul-Fitar', 'Easter Day', 'Bhai Duj', 'Good Friday', 
+	'Mahavir Jayanti', 'Milad un-Nabi/Id-e-Milad'
+	}
+
+	holiday_df = pd.read_csv('../data/holidays_in_india_2011_2017.csv')
+
+	# Filter by required_holidays_set
+	holiday_df_filtered = holiday_df[holiday_df.apply(lambda x: x['Name'] in required_holidays_set, axis=1)]
+
+	unique_names_to_type_dict = get_unique_holidays()
+
+	# There's two entries for Holi, one is Gazetted Holiday other is Restricted Holiday, so this ensures all are marked as Gazetted Holiday
+	unique_names_to_type_dict['Holi'] = 'Gazetted Holiday'
+	holiday_df_filtered['Type'] = holiday_df_filtered.apply(lambda x: unique_names_to_type_dict[x['Name']], axis=1)
+
+	# Ramzan Eid has two Holiday Types, one is "Gazetted Holiday" and other is "Muslim, Common local holiday", so this is for fixing that
+	holiday_df_filtered['Type'] = holiday_df_filtered['Type'].apply(lambda x: 'Gazetted Holiday' if x == 'Muslim, Common local holiday' else x)
+
+	""" 
+		Use this code block to determine whether there are multiple entries for certain days like 14th January of 2014 had 3 holidays on same day
+		So there were 3 separate entries for same date
+		In such case, you will have to manually clean the Holidays in India csv on your own
+		vc = holiday_df_filtered['Date'].value_counts()
+		print(vc[vc > 1])
+	"""
+
+	# Difference between how many holidays were removed
+	print(len(holiday_df))
+	print(len(holiday_df_filtered))
+
+	holiday_df_filtered.to_csv('../data/holidays_in_india_2011_2017_filtered.csv', index=False)
+
+# holiday_scraper()
+# get_unique_holidays()
+filter_holidays()
