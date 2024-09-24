@@ -182,7 +182,7 @@ def merge_holidays(path1, path2):
 def drop_duplicated_holidays(path):
 	holiday_df = pd.read_csv(path)
 	holiday_df.drop_duplicates(subset='Date', inplace=True)
-	holiday_df.to_csv('./datafest/data/no_duplicated_holidays.csv', index=False)
+	holiday_df.to_csv('./datafest/data/final_holidays.csv', index=False)
 
 base_path = "./datafest/data/"
 
