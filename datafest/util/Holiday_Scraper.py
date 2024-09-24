@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-
+import os
 # NOTES: Ramzan Eid is Gazetted Holiday (it is not marked as such in data tho)
 # Guru Govind Singh Jayanti is to be considered as Restricted Holiday even though it is marked as Observance for two years but it is marked as 
 # Restricted Holiday for the other 5 years
@@ -172,6 +172,28 @@ def filter_holidays():
 
 	holiday_df_filtered.to_csv('../data/peru_holidays_filtered.csv', index=False)
 
-holiday_scraper()
+def merge_holidays(path1, path2):
+	holiday_df1 = pd.read_csv(path1)
+	holiday_df2 = pd.read_csv(path2)
+	result = pd.concat([holiday_df1, holiday_df2])
+	result.sort_values(by='Date', inplace=True)
+	result.to_csv('./datafest/data/merged_holidays.csv', index=False)
+
+def drop_duplicated_holidays(path):
+	holiday_df = pd.read_csv(path)
+	holiday_df.drop_duplicates(subset='Date', inplace=True)
+	holiday_df.to_csv('./datafest/data/no_duplicated_holidays.csv', index=False)
+
+base_path = "./datafest/data/"
+
+# holiday_scraper()
+
+# file1_path = os.path.join(base_path, "peru_holidays.csv")
+# file2_path = os.path.join(base_path, "extra_holidays.csv")
+# merge_holidays(file1_path, file2_path)
+
+file_path = os.path.join(base_path, "merged_holidays.csv")
+drop_duplicated_holidays(file_path)
+
 # get_unique_holidays()
 # filter_holidays()
