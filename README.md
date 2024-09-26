@@ -31,3 +31,11 @@
 > Se usa los criterios de feriado y día de trabajo.
 - **isPaymentDay**: ¿Es día de pago (fin de mes o quincena)? (True/False)
 - **isPayweek**: ¿Es la semana de pago (quincena o fin de mes)? (True/False)
+
+### Más métricas
+- **rolling_mean_weekday**: The average demand for two days of the same past (on two Tuesdays, on two Wednesdays) (True/False)
+- **rolling_max**: Maximum demand value for the week
+- **lag_6**: The amount of demand seix days ago
+- **rolling_max_weekday**: The maximum demand value for two of the same past days of the week (on two Tuesdays, on two Wednesdays)
+- **rolling_std**: Weekly demand standard deviation
+- **rolling_mean**: Average monthly demand value
