@@ -1,4 +1,4 @@
-ATM Name,Transaction Date,No Of Withdrawals,No Of XYZ Card Withdrawals,No Of Other Card Withdrawals,Total amount Withdrawn,Amount withdrawn XYZ Card,Amount withdrawn Other Card,Type,Weekday,Holiday Sequence,isYesterdayHoliday,isHoliday,isTomorrowHoliday,isYesterdayWeekday,isTomorrowWeekday,isWeekday,isPaymentDay,Payweek
+ATM Name,Transaction Date,No Of Withdrawals,No Of XYZ Card Withdrawals,No Of Other Card Withdrawals,Total amount Withdrawn,Amount withdrawn XYZ Card,Amount withdrawn Other Card,Type,Weekday,Holiday Sequence,isYesterdayHoliday,isHoliday,isTomorrowHoliday,isYesterdayWeekday,isTomorrowWeekday,isWeekday,isPaymentDay,isPayweek
 Big Street ATM,2020-01-01,125,26,99,429200,75500,353700,National holiday,WEDNESDAY,WHH,False,True,True,True,True,True,False,True
 Mount Road ATM,2020-01-01,144,49,95,377900,155200,222700,National holiday,WEDNESDAY,WHH,False,True,True,True,True,True,False,True
 Airport ATM,2020-01-01,78,58,20,315400,269100,46300,National holiday,WEDNESDAY,WHH,False,True,True,True,True,True,False,True
