@@ -5,7 +5,6 @@ Date,Name,Weekday,Type
 2020-02-02,Fiesta de la Virgen de la Candelaria,SUNDAY,Observance
 2020-02-14,Día de San Valentín,FRIDAY,Observance
 2020-03-01,Vine Harvest Festival,SUNDAY,Observance
-2020-03-19,March Equinox,THURSDAY,Season
 2020-04-05,Semana Santa (Holy Week),SUNDAY,Observance
 2020-04-09,Maundy Thursday,THURSDAY,"National holiday, Christian"
 2020-04-10,Good Friday,FRIDAY,"National holiday, Christian"
@@ -13,7 +12,6 @@ Date,Name,Weekday,Type
 2020-05-01,Labor Day / May Day,FRIDAY,National holiday
 2020-05-10,Mothers' Day,SUNDAY,Observance
 2020-06-07,Flag Day,SUNDAY,Observance
-2020-06-20,June Solstice,SATURDAY,Season
 2020-06-21,Fathers' Day,SUNDAY,Observance
 2020-06-24,San Juan Festival,WEDNESDAY,Observance
 2020-06-29,St Peter and St Paul,MONDAY,National holiday
@@ -24,14 +22,12 @@ Date,Name,Weekday,Type
 2020-08-06,Battle of Junín,THURSDAY,Observance
 2020-08-16,Children's Day,SUNDAY,Observance
 2020-08-30,Santa Rosa De Lima,SUNDAY,National holiday
-2020-09-22,September Equinox,TUESDAY,Season
 2020-09-24,Armed Forces Day,THURSDAY,Observance
 2020-10-01,Feria del Señor de los Milagros,THURSDAY,Observance
 2020-10-31,Day of the Creole Song,SATURDAY,Observance
 2020-11-01,All Saints' Day,SUNDAY,National holiday
 2020-11-02,All Souls' Day,MONDAY,Observance
 2020-12-08,Feast of the Immaculate Conception,TUESDAY,National holiday
-2020-12-21,December Solstice,MONDAY,Season
 2020-12-24,Christmas Eve,THURSDAY,"Observance, Christian"
 2020-12-25,Christmas Day,FRIDAY,"National holiday, Christian"
 2020-12-31,Public Sector Holiday,THURSDAY,Public Sector Holiday
@@ -41,7 +37,6 @@ Date,Name,Weekday,Type
 2021-02-02,Fiesta de la Virgen de la Candelaria,TUESDAY,Observance
 2021-02-14,Día de San Valentín,SUNDAY,Observance
 2021-03-01,Vine Harvest Festival,MONDAY,Observance
-2021-03-20,March Equinox,SATURDAY,Season
 2021-03-28,Semana Santa (Holy Week),SUNDAY,Observance
 2021-04-01,Maundy Thursday,THURSDAY,"National holiday, Christian"
 2021-04-02,Good Friday,FRIDAY,"National holiday, Christian"
@@ -58,7 +53,6 @@ Date,Name,Weekday,Type
 2021-08-06,Battle of Junín,FRIDAY,Observance
 2021-08-15,Children's Day,SUNDAY,Observance
 2021-08-30,Santa Rosa De Lima,MONDAY,National holiday
-2021-09-22,September Equinox,WEDNESDAY,Season
 2021-09-24,Armed Forces Day,FRIDAY,Observance
 2021-10-01,Feria del Señor de los Milagros,FRIDAY,Observance
 2021-10-08,Battle of Angamos,FRIDAY,National holiday
@@ -67,7 +61,6 @@ Date,Name,Weekday,Type
 2021-11-01,All Saints' Day,MONDAY,National holiday
 2021-11-02,Public Sector Holiday,TUESDAY,Public Sector Holiday
 2021-12-08,Feast of the Immaculate Conception,WEDNESDAY,National holiday
-2021-12-21,December Solstice,TUESDAY,Season
 2021-12-24,Nochebuena,FRIDAY,Observance
 2021-12-25,Christmas Day,SATURDAY,"National holiday, Christian"
 2021-12-27,Public Sector Holiday,MONDAY,Public Sector Holiday
@@ -79,7 +72,6 @@ Date,Name,Weekday,Type
 2022-02-02,Fiesta de la Virgen de la Candelaria,WEDNESDAY,Observance
 2022-02-14,Día de San Valentín,MONDAY,Observance
 2022-03-01,Vine Harvest Festival,TUESDAY,Observance
-2022-03-20,March Equinox,SUNDAY,Season
 2022-04-10,Semana Santa (Holy Week),SUNDAY,Observance
 2022-04-14,Maundy Thursday,THURSDAY,"National holiday, Christian"
 2022-04-15,Good Friday,FRIDAY,"National holiday, Christian"
@@ -90,7 +82,6 @@ Date,Name,Weekday,Type
 2022-06-07,Flag Day,TUESDAY,Observance
 2022-06-13,Public Sector Holiday,MONDAY,Public Sector Holiday
 2022-06-19,Fathers' Day,SUNDAY,Observance
-2022-06-21,June Solstice,TUESDAY,Season
 2022-06-24,San Juan Festival,FRIDAY,Observance
 2022-06-29,St Peter and St Paul,WEDNESDAY,National holiday
 2022-07-06,Day of the Friend,WEDNESDAY,Observance
@@ -100,7 +91,6 @@ Date,Name,Weekday,Type
 2022-08-21,Children's Day,SUNDAY,Observance
 2022-08-29,Public Sector Holiday,MONDAY,Public Sector Holiday
 2022-08-30,Santa Rosa De Lima,TUESDAY,National holiday
-2022-09-22,September Equinox,THURSDAY,Season
 2022-09-24,Armed Forces Day,SATURDAY,Observance
 2022-10-01,Feria del Señor de los Milagros,SATURDAY,Observance
 2022-10-07,Public Sector Holiday,FRIDAY,Public Sector Holiday
@@ -110,7 +100,6 @@ Date,Name,Weekday,Type
 2022-11-02,All Souls' Day,WEDNESDAY,Observance
 2022-12-08,Feast of the Immaculate Conception,THURSDAY,National holiday
 2022-12-09,Battle of Ayacucho,FRIDAY,National holiday
-2022-12-21,December Solstice,WEDNESDAY,Season
 2022-12-24,Christmas Eve,SATURDAY,"Observance, Christian"
 2022-12-25,Christmas Day,SUNDAY,"National holiday, Christian"
 2022-12-26,Public Sector Holiday,MONDAY,Public Sector Holiday
@@ -123,7 +112,6 @@ Date,Name,Weekday,Type
 2023-02-02,Fiesta de la Virgen de la Candelaria,THURSDAY,Observance
 2023-02-14,Día de San Valentín,TUESDAY,Observance
 2023-03-01,Vine Harvest Festival,WEDNESDAY,Observance
-2023-03-20,March Equinox,MONDAY,Season
 2023-04-02,Semana Santa (Holy Week),SUNDAY,Observance
 2023-04-06,Maundy Thursday,THURSDAY,"National holiday, Christian"
 2023-04-07,Good Friday,FRIDAY,"National holiday, Christian"
@@ -133,7 +121,6 @@ Date,Name,Weekday,Type
 2023-05-14,Mothers' Day,SUNDAY,Observance
 2023-06-07,Flag Day,WEDNESDAY,Observance
 2023-06-18,Fathers' Day,SUNDAY,Observance
-2023-06-21,June Solstice,WEDNESDAY,Season
 2023-06-24,Farmer Day,SATURDAY,Observance
 2023-06-29,St Peter and St Paul,THURSDAY,National holiday
 2023-06-30,Public Sector Holiday,FRIDAY,Public Sector Holiday
@@ -145,7 +132,6 @@ Date,Name,Weekday,Type
 2023-08-06,Battle of Junín,SUNDAY,Observance
 2023-08-20,Children's Day,SUNDAY,Observance
 2023-08-30,Santa Rosa De Lima,WEDNESDAY,National holiday
-2023-09-23,September Equinox,SATURDAY,Season
 2023-09-24,Armed Forces Day,SUNDAY,Observance
 2023-10-01,Feria del Señor de los Milagros,SUNDAY,Observance
 2023-10-08,Battle of Angamos,SUNDAY,National holiday
@@ -156,7 +142,6 @@ Date,Name,Weekday,Type
 2023-12-07,Public Sector Holiday,THURSDAY,Public Sector Holiday
 2023-12-08,Feast of the Immaculate Conception,FRIDAY,National holiday
 2023-12-09,Battle of Ayacucho,SATURDAY,National holiday
-2023-12-21,December Solstice,THURSDAY,Season
 2023-12-24,Nochebuena,SUNDAY,Observance
 2023-12-25,Christmas Day,MONDAY,"National holiday, Christian"
 2023-12-26,Public Sector Holiday,TUESDAY,Public Sector Holiday
@@ -167,7 +152,6 @@ Date,Name,Weekday,Type
 2024-02-02,Fiesta de la Virgen de la Candelaria,FRIDAY,Observance
 2024-02-14,Día de San Valentín,WEDNESDAY,Observance
 2024-03-01,Vine Harvest Festival,FRIDAY,Observance
-2024-03-19,March Equinox,TUESDAY,Season
 2024-03-24,Semana Santa (Holy Week),SUNDAY,Observance
 2024-03-28,Maundy Thursday,THURSDAY,"National holiday, Christian"
 2024-03-29,Good Friday,FRIDAY,"National holiday, Christian"
@@ -176,7 +160,6 @@ Date,Name,Weekday,Type
 2024-05-12,Mothers' Day,SUNDAY,Observance
 2024-06-07,Flag Day,FRIDAY,Observance
 2024-06-16,Fathers' Day,SUNDAY,Observance
-2024-06-20,June Solstice,THURSDAY,Season
 2024-06-24,Inti Raymi Day,MONDAY,Observance
 2024-06-29,St Peter and St Paul,SATURDAY,National holiday
 2024-07-06,Day of the Friend,SATURDAY,Observance
@@ -187,7 +170,6 @@ Date,Name,Weekday,Type
 2024-08-06,Battle of Junín,TUESDAY,National holiday
 2024-08-18,Children's Day,SUNDAY,Observance
 2024-08-30,Santa Rosa De Lima,FRIDAY,National holiday
-2024-09-22,September Equinox,SUNDAY,Season
 2024-09-24,Armed Forces Day,TUESDAY,Observance
 2024-10-01,Feria del Señor de los Milagros,TUESDAY,Observance
 2024-10-07,Public Sector Holiday,MONDAY,Public Sector Holiday
@@ -198,7 +180,6 @@ Date,Name,Weekday,Type
 2024-12-06,Public Sector Holiday,FRIDAY,Public Sector Holiday
 2024-12-08,Feast of the Immaculate Conception,SUNDAY,National holiday
 2024-12-09,Battle of Ayacucho,MONDAY,National holiday
-2024-12-21,December Solstice,SATURDAY,Season
 2024-12-23,Public Sector Holiday,MONDAY,Public Sector Holiday
 2024-12-24,Public Sector Holiday,TUESDAY,Public Sector Holiday
 2024-12-25,Christmas Day,WEDNESDAY,"National holiday, Christian"
